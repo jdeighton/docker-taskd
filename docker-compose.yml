@@ -1,13 +1,13 @@
 taskd:
-    image: x4121/taskd:latest
+    image: jdeighton/taskd:latest
     volumes:
         - ./taskd:/var/taskd
     ports:
         - "53589:53589"
     environment:
         CERT_CN: "taskd"
-        CERT_ORGANIZATION: "some org"
-        CERT_COUNTRY: "DE"
-        CERT_STATE: "Bavaria"
-        CERT_LOCALITY: "Munich"
+        CERT_ORGANIZATION: "jdeighton"
+        CERT_COUNTRY: "US"
+        CERT_STATE: "NY"
+        CERT_LOCALITY: "New York"
     restart: always
